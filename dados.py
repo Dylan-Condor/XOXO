@@ -1,0 +1,20 @@
+import random
+
+
+j1 = input ("Ingrese el nombre del JUGADOR 1: ")
+j2 = input ("Ingrese el nombre del JUGADOR 2: ")
+
+input (f"{j1}, Presiona ENTER para lanzar el dado")
+lanzamientoj1 = random.randint(1,6)
+print (f"{j1} sacaste {lanzamientoj1}")
+
+input (f"{j2}, Presiona ENTER para lanzar el dado")
+lanzamientoj2 = random.randint(1,6)
+print (f"{j2} sacaste {lanzamientoj2}")
+
+if lanzamientoj1 > lanzamientoj2:
+    print(f"El ganador es: {j1}")
+elif lanzamientoj2 > lanzamientoj1:
+    print(f"El ganador es: {j2}")
+else:
+    print (f"{j1} y {j2} empataron")
